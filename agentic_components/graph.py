@@ -2,8 +2,8 @@
 from langgraph.constants import START, END
 from langgraph.graph import StateGraph
 
-from nodes import llm_call, tool_node, should_continue
-from state import MessagesState
+from agentic_components.nodes import llm_call, tool_node, should_continue
+from agentic_components.state import MessagesState
 
 agent_builder = StateGraph(MessagesState)
 

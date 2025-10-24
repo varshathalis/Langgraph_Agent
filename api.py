@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from agent import run  # Import your run() function from agent.py
-import uvicorn
+from agentic_components.agent import run  # Import your run() function from agent.py
 
 # Initialize FastAPI app
 app = FastAPI()

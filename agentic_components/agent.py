@@ -1,6 +1,6 @@
 from langchain_core.messages import HumanMessage
-from graph import agent
-from pprint import  pprint
+from agentic_components.graph import agent
+
 
 def run(user_input):
     messages = [HumanMessage(content=user_input)]

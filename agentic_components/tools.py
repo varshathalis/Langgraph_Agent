@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_openai import AzureChatOpenAI
 from langchain.tools import tool
 
-from llm import model
+from agentic_components.llm import model
 
 
 # Define tools
