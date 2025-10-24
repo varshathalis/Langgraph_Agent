@@ -1,10 +1,6 @@
-import os
-from dotenv import load_dotenv
-from langchain_openai import AzureChatOpenAI
+
 from langchain.tools import tool
-
 from agentic_components.llm import model
-
 
 # Define tools
 @tool
