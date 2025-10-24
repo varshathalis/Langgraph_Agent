@@ -22,5 +22,3 @@ agent_builder.add_edge("tool_node", "llm_call")
 
 # Compile the agent
 agent = agent_builder.compile()
-
-# Invoke
