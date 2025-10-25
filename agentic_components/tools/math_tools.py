@@ -41,7 +41,7 @@ def _safe_eval_expr(expr: str):
         return {"expression": expr, "result": None, "error": str(e)}
 
 # ---------- Registrar ----------
-def register_math_tools(mcp):
+def register_tools(mcp):
     """
     Register math tools on a provided FastMCP instance.
     Usage:
