@@ -1,0 +1,3 @@
+event: thinking
+data: {"content": "Processing: what is 5 times 3"}
+
