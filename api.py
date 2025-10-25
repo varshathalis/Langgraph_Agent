@@ -61,7 +61,6 @@ async def event_generator(queue: asyncio.Queue):
 async def run_agent_api(req: Request):
 
     data = await req.json()
-    pprint(data)
     queue = asyncio.Queue()
 
     async def sse_send(event: str, payload: dict):
@@ -71,7 +70,7 @@ async def run_agent_api(req: Request):
     async def orchestrator_task():
         try:
             # Run the LangGraph agent (it will emit thinking/tool/token/etc.)
-            await run_agent(data, sse_send)
+            await run_agent(data['message'], sse_send)
         except Exception as e:
             await sse_send("meta", {"error": str(e)})
         finally:
